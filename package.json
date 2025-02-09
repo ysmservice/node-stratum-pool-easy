@@ -28,7 +28,7 @@
         "url": "https://github.com/Stackout/node-stratum-pool.git"
     },
     "dependencies": {
-        "multi-hashing": "github:/ysmservice/node-multi-hashing",
+        "multi-hashing": "github:/ysmservice/node-multi-hashing-easy",
         "bignum": "0.12.5",
         "base58-native": "*",
         "async": "*"
