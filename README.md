@@ -355,6 +355,35 @@ pool.start();
 ```
 
 
+Stratum Password Parameters
+--------------------------
+The stratum protocol implementation supports additional parameters in the password field using comma-separated values:
+
+```
+password,param1=value1,param2=value2,...
+```
+
+Supported parameters:
+* `nh=true/false` - Enable NiceHash mode (sets extraNonce2Size to 4)
+* `d=number` - Set custom difficulty for the connection
+* `proto=number` - Specify protocol version
+
+Example miner configurations:
+
+```
+# Standard connection
+-p password
+
+# NiceHash mode with custom difficulty
+-p password,nh=true,d=32
+
+# Set custom difficulty only
+-p password,d=16
+
+# Specify protocol version
+-p password,proto=1
+```
+
 Credits
 -------
 * [vekexasia](//github.com/vekexasia) - co-developer & great tester
